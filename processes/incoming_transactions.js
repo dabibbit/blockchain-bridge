@@ -24,7 +24,8 @@ const monitor = new blockchain.AccountMonitor({
           amount: transaction.amount,
           currency: 'DOG',
           external_account_id: externalAccount.id,
-          deposit: true
+          deposit: true,
+          status: 'incoming'
         })
       })
       .then(function(transaction) {
