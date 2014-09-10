@@ -1,14 +1,15 @@
 {
   "name": "crypto-coins-gatewayd-plugin",
   "version": "0.1.0",
-  "description": "Node.js modules to facilitate integration & automation of cryptocurrency coins into a ripple gateway
-"
+  "description": "Node.js modules to facilitate integration & automation of cryptocurrency coins into a ripple gateway",
   "main": "main.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "blockchain-account-monitor": "^0.2.0"
+    "blockchain-account-monitor": "^0.2.0",
+    "bluebird": "^2.3.2",
+    "async": "^0.9.0"
   },
   "devDependencies": {},
   "scripts": {
