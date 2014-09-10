@@ -23,6 +23,7 @@ const worker = new Worker({
     .then(function(address) {
       return coinDaemon.sendtoaddressAsync(address.uid, payment.amount)
       .then(function(blockchainPayment) {
+        console.log('blockchain payment succeeded', blockchainPayment);
         return payment.updateAttributes({
           status: 'cleared'
         })
